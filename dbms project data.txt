@@ -1,0 +1,24 @@
+
+mysql> desc users;
++--------+-------------+------+-----+---------+----------------+
+| Field  | Type        | Null | Key | Default | Extra          |
++--------+-------------+------+-----+---------+----------------+
+| sr_no  | int(3)      | NO   | UNI | NULL    | auto_increment |
+| user   | varchar(20) | YES  |     | NULL    |                |
+| pass   | varchar(20) | YES  |     | NULL    |                |
+| mobile | varchar(10) | NO   | PRI | NULL    |                |
++--------+-------------+------+-----+---------+----------------+
+4 rows in set (0.02 sec)
+
+
+mysql> desc posts;
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| sr_no       | int(3)        | NO   | PRI | NULL    | auto_increment |
+| host_mobile | varchar(10)   | YES  |     | NULL    |                |
+| doa         | varchar(50)   | YES  |     | NULL    |                |
+| Post        | varchar(1000) | YES  |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
